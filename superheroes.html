@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap" rel="stylesheet">
+    <title>Superheroes</title>
+
+    <style>
+        h1 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 48px;
+            text-align: center;
+            color: rgb(252, 93, 93);
+        }
+
+        h2 {
+            color: rgb(252, 93, 93);
+            text-transform: uppercase;
+        }
+
+        #container {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .hero-card {
+            width: 400px;
+            height: 70vh;
+            overflow-y: scroll;
+            margin: 30px;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .hero-pic {
+            width: auto;
+        }
+
+        .hero-pic img {
+            width: 347px;
+            height: 230px;
+        }
+
+        .hero-info {
+            width: auto;
+            text-align: start;
+            box-sizing: border-box;
+        }
+
+        .sub-title {
+            font-weight: 600;
+
+        }
+
+        .rate {
+            margin-top: 50px;
+        }
+
+        /* нагуглила вот этот способ */
+        .checkbox-rate input[type=radio] {
+            display: none;
+        }
+
+        .checkbox-rate:not(:checked)>label:hover {
+            color: rgb(252, 93, 93);
+        }
+
+        .checkbox-rate:not(:checked)>label:before {
+            content: '★';
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Superheroes</h1>
+    <div id="container"></div>
+    <script src="superheroes.js"></script>
+</body>
+
+</html>
